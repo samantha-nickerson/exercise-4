@@ -1,3 +1,45 @@
+/* line 7, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+dropdown ul li:nth-child(1) {
+  border-left: 4px solid #E74C3C; }
+  /* line 9, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(1) .fa {
+    color: #E74C3C; }
+  /* line 12, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(1):hover {
+    background: #E74C3C;
+    color: white; }
+    /* line 15, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+    dropdown ul li:nth-child(1):hover .fa {
+      color: white; }
+
+/* line 7, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+dropdown ul li:nth-child(2) {
+  border-left: 4px solid #0072B5; }
+  /* line 9, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(2) .fa {
+    color: #0072B5; }
+  /* line 12, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(2):hover {
+    background: #0072B5;
+    color: white; }
+    /* line 15, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+    dropdown ul li:nth-child(2):hover .fa {
+      color: white; }
+
+/* line 7, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+dropdown ul li:nth-child(3) {
+  border-left: 4px solid #2C3E50; }
+  /* line 9, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(3) .fa {
+    color: #2C3E50; }
+  /* line 12, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+  dropdown ul li:nth-child(3):hover {
+    background: #2C3E50;
+    color: white; }
+    /* line 15, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/mixins */
+    dropdown ul li:nth-child(3):hover .fa {
+      color: white; }
+
 @-moz-viewport {
   width: device-width;
   scale: 1; }
@@ -33,49 +75,53 @@ html {
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
 /* line 25, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 29, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+header {
+  position: relative;
+  background-color: #ECF0F1;
+  height: 3.9em; }
+
+/* line 35, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 .float-right {
   float: right; }
 
-/* line 28, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-.fa {
-  font-size: 0.8em;
-  line-height: 22px !important; }
-
-/* line 32, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 38, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown {
-  display: inline-block;
-  margin: 20px 50px; }
+  display: inline-block; }
 
-/* line 36, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 41, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label, dropdown ul li {
   display: block;
-  width: 200px;
+  width: 150px;
   background: #ECF0F1;
-  padding: 15px 20px; }
+  padding: 20px; }
 
-/* line 42, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 47, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label:hover, dropdown ul li:hover {
   background: #1ABC9C;
   color: white;
   cursor: pointer; }
 
-/* line 47, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 52, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label {
   color: #1ABC9C;
-  border-left: 4px solid #1ABC9C;
-  border-radius: 0 5px 0 0;
+  border-left: 3px solid #1ABC9C;
   position: relative;
   z-index: 2; }
 
-/* line 54, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 58, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input {
   display: none; }
 
-/* line 57, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 61, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input ~ ul {
   position: relative;
   visibility: hidden;
@@ -83,60 +129,18 @@ dropdown input ~ ul {
   top: -20px;
   z-index: 1; }
 
-/* line 64, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 68, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input:checked + label {
   background: #1ABC9C;
   color: white; }
 
-/* line 69, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 73, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input:checked ~ ul {
   visibility: visible;
   opacity: 1;
   top: 0; }
 
-/* line 77, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-dropdown ul li:nth-child(1) {
-  border-left: 4px solid #E74C3C; }
-  /* line 79, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(1) .fa {
-    color: #E74C3C; }
-  /* line 82, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(1):hover {
-    background: #E74C3C;
-    color: white; }
-    /* line 85, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-    dropdown ul li:nth-child(1):hover .fa {
-      color: white; }
-
-/* line 77, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-dropdown ul li:nth-child(2) {
-  border-left: 4px solid #0072B5; }
-  /* line 79, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(2) .fa {
-    color: #0072B5; }
-  /* line 82, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(2):hover {
-    background: #0072B5;
-    color: white; }
-    /* line 85, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-    dropdown ul li:nth-child(2):hover .fa {
-      color: white; }
-
-/* line 77, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-dropdown ul li:nth-child(3) {
-  border-left: 4px solid #2C3E50; }
-  /* line 79, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(3) .fa {
-    color: #2C3E50; }
-  /* line 82, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-  dropdown ul li:nth-child(3):hover {
-    background: #2C3E50;
-    color: white; }
-    /* line 85, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
-    dropdown ul li:nth-child(3):hover .fa {
-      color: white; }
-
-/* line 92, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 79, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 .animate {
   transition: all 0.3s;
   backface-visibility: hidden;
