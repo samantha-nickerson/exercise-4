@@ -26,9 +26,10 @@ body{
 	@include zero;
 }
 section{
-	background: transparent url("../../images/water.jpg") no-repeat center top;
+	background: transparent url("../images/water.jpg") no-repeat center top;
 	background-size: cover;
 	height: 800px;
+  background-color: $secondary;
 }
 
 h1{

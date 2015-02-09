@@ -119,11 +119,12 @@ body {
 
 /* line 28, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 section {
-  background: transparent url("../../images/water.jpg") no-repeat center top;
+  background: transparent url("../images/water.jpg") no-repeat center top;
   background-size: cover;
-  height: 800px; }
+  height: 800px;
+  background-color: #2C3E50; }
 
-/* line 34, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 35, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 h1 {
   color: white;
   font-weight: bold;
@@ -132,28 +133,28 @@ h1 {
   text-align: center;
   padding: 0 30px; }
 
-/* line 43, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 44, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 header {
   position: relative;
   background-color: rgba(236, 240, 241, 0.4);
   height: 3.5em; }
 
-/* line 49, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 50, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 a {
   list-style-type: none;
   text-decoration: none;
   display: block;
   color: white; }
 
-/* line 56, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 57, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 .float-right {
   float: right; }
 
-/* line 59, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 60, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown {
   display: inline-block; }
 
-/* line 62, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 63, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label, dropdown ul li {
   display: block;
   width: 70px;
@@ -161,23 +162,23 @@ dropdown label, dropdown ul li {
   font-size: 0.75em;
   text-align: center; }
 
-/* line 69, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 70, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label:hover, dropdown ul li:hover {
   background: #2C3E50;
   color: white;
   cursor: pointer; }
 
-/* line 74, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 75, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown label {
   color: #2C3E50;
   position: relative;
   z-index: 2; }
 
-/* line 80, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 81, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input {
   display: none; }
 
-/* line 83, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 84, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input ~ ul {
   position: relative;
   visibility: hidden;
@@ -187,18 +188,18 @@ dropdown input ~ ul {
   top: -20px;
   z-index: 1; }
 
-/* line 92, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 93, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input:checked + label {
   background: #2C3E50;
   color: white; }
 
-/* line 97, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 98, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 dropdown input:checked ~ ul {
   visibility: visible;
   opacity: 1;
   top: 0; }
 
-/* line 103, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+/* line 104, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
 .animate {
   transition: all 0.3s;
   backface-visibility: hidden;
@@ -210,19 +211,19 @@ dropdown input:checked ~ ul {
   /* Internet Explorer */ }
 
 @media only screen and (min-width: 20em) {
-  /* line 116, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+  /* line 117, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
   dropdown label, dropdown ul li {
     font-size: 1em;
     width: 90px;
     padding: 20px 10px; }
 
-  /* line 121, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+  /* line 122, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
   header {
     height: 3.8em; }
  }
 
 @media only screen and (min-width: 30em) {
-  /* line 129, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
+  /* line 130, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-4/scss/components/main */
   dropdown label, dropdown ul li {
     width: 150px;
     font-size: 1em;
