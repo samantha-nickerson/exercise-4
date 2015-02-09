@@ -5,6 +5,7 @@
 
 @for $i from 1 through length($colors) {
   dropdown ul li:nth-child(#{$i}) {
+    border-left: 4px solid nth($colors, $i);
     &:hover {
         background: nth($colors, $i);
         color: white;
@@ -18,18 +19,4 @@
     -ms-transition: $transition-property $transition-time $method;
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
-}
-
-// Hide text in an element
-@mixin hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block; // inline elements with this won't hide text unless set to block
-}
-
-@mixin show-text{
-  text-indent: 0;
-  white-space: normal;
-  overflow: visible;
 }

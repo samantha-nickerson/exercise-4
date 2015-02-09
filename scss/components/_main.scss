@@ -37,12 +37,20 @@ h1{
 	font-size: 2.5em;
 	text-transform: uppercase;
 	text-align: center;
+  padding: 0 30px;
 }
 
 header {
 	position: relative;
 	background-color: $primary;
-  	height: 3.9em;
+  height: 3.5em;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  color: white;
 }
 
 .float-right{
@@ -53,8 +61,10 @@ dropdown{
 }
 dropdown label, dropdown ul li{
   display: block;
-  width: 150px;
-  padding: 20px;
+  width: 70px;
+  padding: 20px 5px;
+  font-size: .75em;
+  text-align: center;
 }
 dropdown label:hover, dropdown ul li:hover{
   background: $secondary;
@@ -100,4 +110,26 @@ dropdown input:checked ~ ul{
   -webkit-backface-visibility:hidden; /* Chrome and Safari */
   -moz-backface-visibility:hidden; /* Firefox */
   -ms-backface-visibility:hidden; /* Internet Explorer */
+}
+
+@media only screen and (min-width: 20em){
+  dropdown label, dropdown ul li{
+    font-size: 1em;
+    width: 90px;
+    padding: 20px 10px;
+  }
+   header {
+    height: 3.8em;
+  }
+}
+
+
+
+@media only screen and (min-width: 30em){
+  dropdown label, dropdown ul li{
+  width: 150px;
+  font-size: 1em;
+  padding: 20px;
+  text-align: left;
+  }
 }
