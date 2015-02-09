@@ -25,11 +25,24 @@ html {
 body{
 	@include zero;
 }
+section{
+	background: transparent url("../../images/water.jpg") no-repeat center top;
+	background-size: cover;
+	height: 800px;
+}
+
+h1{
+	color: white;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	text-align: center;
+}
 
 header {
-  position: relative;
-  background-color: $primary;
-  height: 3.9em;
+	position: relative;
+	background-color: $primary;
+  	height: 3.9em;
 }
 
 .float-right{
@@ -41,7 +54,6 @@ dropdown{
 dropdown label, dropdown ul li{
   display: block;
   width: 150px;
-  background: $primary;
   padding: 20px;
 }
 dropdown label:hover, dropdown ul li:hover{
@@ -51,7 +63,7 @@ dropdown label:hover, dropdown ul li:hover{
 }
 dropdown label{
   color: $secondary;
-  border-left: 3px solid $secondary; 
+
   position: relative;
   z-index: 2;
 }
@@ -61,6 +73,8 @@ dropdown input{
 dropdown input ~ ul{
   position: relative;
   visibility: hidden;
+  color: white;
+  background-color: $primary;
   opacity: 0;
   top: -20px;
   z-index: 1;
